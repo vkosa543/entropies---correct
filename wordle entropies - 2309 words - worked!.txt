@@ -19,8 +19,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 ...         continue
 ...     freqs = list(map(float, parts[1:]))
 ...     total = sum(freqs)
-.....     H = -sum((f/total) * math.log2(f/total) for f in freqs....     H = -sum((f/total) * math.log2(f/total) for f in fre   .....     H = -sum((f/total) * math.log2(f/total) for f in freqs....     H = -sum((f/total) * math.log2(f/total) for f in fre   .....H = -sum((f/total) * math.log2(f/total) for f in freqs \
-if f > 0)
+.....   H = -sum((f/total) * math.log2(f/total) for f in freqs if f > 0)
 ...     entropies.append((word, H))
 ...
 >>> assert len(entropies) == len(answer_words)
